@@ -1,0 +1,27 @@
+.compare {
+  &__bikes {
+    @include onDesktop {
+      display: flex;
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    max-width: 280px;
+    margin: 0 auto 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include onTablet {
+      max-width: 392px;
+      margin-bottom: 48px;
+    }
+
+    @include onDesktop {
+      max-width: 324px;
+      margin-bottom: 0;
+    }
+  }
+}

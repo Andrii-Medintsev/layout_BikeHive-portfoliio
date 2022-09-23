@@ -1,0 +1,47 @@
+.form {
+  @include onDesktop {
+    max-width: 411px;
+  }
+
+  &__field {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 16px;
+    padding: 14px 16px;
+    height: 48px;
+    width: 100%;
+    border-radius: 40px;
+    color: $form-text-color;
+    border: 1px solid transparent;
+    background-color: #f8f8fa;
+
+    &:hover {
+      border-color: #d5d7de;
+      color: $form-text-color;
+
+      &::placeholder {
+        color: $form-text-color;
+      }
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 20px;
+      color: #7E7E83;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $form-text-color;
+    }
+
+    &--textarea {
+      height: 148px;
+      margin-bottom: 32px;
+      border-radius: 16px;
+      font-family: inherit;
+      resize: none;
+    }
+  }
+
+}
