@@ -15,6 +15,12 @@
     border: 1px solid transparent;
     background-color: #f8f8fa;
 
+    &::placeholder {
+      font-size: 14px;
+      line-height: 20px;
+      color: #7e7e83;
+    }
+
     &:hover {
       border-color: #d5d7de;
       color: $form-text-color;
@@ -22,12 +28,6 @@
       &::placeholder {
         color: $form-text-color;
       }
-    }
-
-    &::placeholder {
-      font-size: 14px;
-      line-height: 20px;
-      color: #7E7E83;
     }
 
     &:focus {
