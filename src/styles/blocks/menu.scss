@@ -1,0 +1,75 @@
+.menu {
+  background-color: $light-grey;
+
+  &__content {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: $headerTopPadding 0;
+  }
+
+  &__top {
+    @include topAction;
+    grid-template-columns: 1fr var(--icon-width);
+    margin-bottom: 44px;
+
+    @include onTablet {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list {
+    margin: 0 0 40px;
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    padding-bottom: 8px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $dark-grey;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: $dark-grey;
+    }
+  }
+
+  &__call {
+    display: block;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: $dark-grey;
+
+    &--phone {
+      margin-bottom: 16px;
+    }
+
+    &--action {
+      box-sizing: border-box;
+      padding-bottom: 8px;
+      width: max-content;
+      letter-spacing: 2px;
+      border-bottom: 1px solid $dark-grey;
+    }
+  }
+}
