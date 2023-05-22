@@ -6,7 +6,7 @@ Adaptive landing page
 - Adaptive/responsive Css,
 - SASS,
 - Js,
-- Bem, 
+- Bem,
 - Git
 
 [DEMO LINK](https://andrii-medintsev.github.io/layout_BIKE/)

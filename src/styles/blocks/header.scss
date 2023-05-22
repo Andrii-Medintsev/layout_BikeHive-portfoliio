@@ -1,17 +1,32 @@
 .header {
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 85%;
   background-color: $light-grey;
-  background-image: url(../images/header.jpg);
+  background-image: url(../images/header.png);
+
+  @include onTablet {
+    background-position: center;
+  }
 
   &__content {
     box-sizing: border-box;
-    height: 100vh;
-    padding: $headerTopPadding 0;
+    height: 480px;
+    padding: 30px 0 88px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include onTablet {
+      height: 628px;
+      padding: 36px 0 130px;
+    }
+
+    @include onDesktop {
+      height: 711px;
+      padding-bottom: 203px;
+    }
   }
 
   &__top {
@@ -19,13 +34,13 @@
   }
 
   &__title {
-    margin: 0 0 140px;
+    margin: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
     text-align: center;
     letter-spacing: -1.5px;
-    color: $dark-grey;
+    color: #fff;
 
     @include onTablet {
       font-size: 64px;
