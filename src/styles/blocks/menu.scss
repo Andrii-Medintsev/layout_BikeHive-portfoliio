@@ -4,7 +4,11 @@
   &__content {
     height: 100vh;
     box-sizing: border-box;
-    padding: $headerTopPadding 0;
+    padding: 30px 0 0;
+
+    @include onTablet {
+      padding-top: 36px;
+    }
   }
 
   &__top {

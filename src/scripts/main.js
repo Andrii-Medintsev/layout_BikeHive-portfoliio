@@ -14,6 +14,6 @@ form.addEventListener('submit', noReload);
 
 function noReload(event) {
   event.preventDefault();
-  
+
   form.reset();
 }
