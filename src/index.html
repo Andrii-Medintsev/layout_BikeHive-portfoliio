@@ -6,7 +6,11 @@
     <title>My Bike</title>
     <link rel="icon" href="./images/bike.svg">
     <link rel="stylesheet" href="./styles/main.scss">
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script
+      type="text/javascript"
+      src="scripts/main.js"
+      defer
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -15,12 +19,12 @@
   </head>
   <body class="page__body">
     <header class="header page__section">
-      <div class="container">
+      <div class="header__container">
         <div class="header__content">
           <div class="header__top">
             <a href="#" class="logo">
               <img
-                src="./images/logo.png"
+                src="./images/logo.svg"
                 alt="Mi-Bike-logo"
                 class="logo__image"
               >
@@ -31,7 +35,6 @@
             </a>
 
             <a href="#menu" class="icon icon--menu">
-              <div class="icon--menu-line"></div>
             </a>
           </div>
 
@@ -43,12 +46,12 @@
     </header>
 
     <nav class="page__menu menu" id="menu">
-      <div class="container">
+      <div class="menu__container">
         <div class="menu__content">
           <div class="menu__top">
             <a href="#" class="logo">
               <img
-                src="./images/logo.png"
+                src="./images/logo.svg"
                 alt="Mi-Bike-logo"
                 class="logo__image"
               >
@@ -99,7 +102,7 @@
 
     <main>
       <section class="page__section about" id="about-us">
-        <div class="container">
+        <div class="about__container">
           <div class="grid grid--on">
             <div class="grid__item grid__item--tablet-1-3 grid__item--desktop-1-5">
               <h2 class="about__title">Move Free</h2>
@@ -115,7 +118,7 @@
       </section>
 
       <section class="page__section compare" id="compare-bikes">
-        <div class="container">
+        <div class="compare__container">
           <h2 class="page__section-title">Compare Bikes</h2>
 
           <div class="compare__bikes">
@@ -189,7 +192,7 @@
       </section>
 
       <section class="page__section details" id="details">
-        <div class="container">
+        <div class="details__container">
           <h2 class="page__section-title">The Details</h2>
 
           <div class="details__detail detail">
@@ -299,7 +302,7 @@
 
           <div class="grid grid--on">
             <div class="grid__item grid__item--tablet-2-5 grid__item--desktop-5-8">
-              <a href="#" class="button">
+              <a href="#" class="button button--explore">
                 Explore
               </a>
             </div>
@@ -308,7 +311,7 @@
       </section>
 
       <section class="page__section contact-us" id="contact-us">
-        <div class="container">
+        <div class="contact-us__container">
           <h2 class="page__section-title">Contact us</h2>
           <div class="contact-us__items">
             <form
@@ -336,6 +339,7 @@
                 name="message-text"
                 placeholder="Message"
                 class="form__field form__field--textarea"
+                required
               ></textarea>
 
               <button class="button button--form">
@@ -378,6 +382,7 @@
                 <a
                   href="https://goo.gl/maps/YXJ6s8VpDr5eiew89"
                   class="info__link"
+                  target="_blank"
                 >
                   400 first ave.
                   <br>
@@ -390,8 +395,6 @@
           </div>
         </div>
       </section>
-
-      <a href="#" class="up-arrow"></a>
     </main>
 
     <footer class="footer"></footer>
