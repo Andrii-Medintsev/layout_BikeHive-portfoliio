@@ -1,2 +1,10 @@
 # BIKE Landing Page
-- [DEMO LINK](https://andrii-medintsev.github.io/layout_BIKE/)
+
+Adaptive landing page
+## Used technoligies:
+- HTML,
+- Adaptive/responsive Css,
+- SASS,
+- Js,
+- Bem, 
+- Git
