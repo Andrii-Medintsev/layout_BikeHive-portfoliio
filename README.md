@@ -1,4 +1,4 @@
-# BIKE Landing Page
+# BikeHive Landing Page
 
 Adaptive landing page
 ## Used technoligies:
@@ -9,6 +9,6 @@ Adaptive landing page
 - Bem,
 - Git
 
-[DEMO LINK](https://andrii-medintsev.github.io/layout_BIKE/)
+[DEMO LINK](https://andrii-medintsev.github.io/layout_BikeHive-portfoliio/)
 
 [FIGMA DESIGN](https://www.figma.com/file/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0%3A1)
